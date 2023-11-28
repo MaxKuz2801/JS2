@@ -8,9 +8,17 @@ for (let index = 0; index <= 9; index++) {
     document.write(`<div> ${index} - money</div>`);
 }
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+let i =0;
+while (i < 20) {
+    document.write(`<h1> Hello </h1>`)
+}
 
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+let i = 0;
+while(i < 20){
+    document.write(`<h1>${text}Hello</h1>`)
+}
 //
 // - Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
