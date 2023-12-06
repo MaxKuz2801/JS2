@@ -39,21 +39,39 @@ function paragraf(Text){
 paragraf('Ukraine')
 
 // +- створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
-function creatUl3(text1, text2, text3) {
+function creatUl3(text1) {
     document.write(
         `
         <ul>
-        <li>${text1}, ${text2}, ${text3} </li>
+        <li>${text1}</li>, 
+        <li>${text1}</li>, 
+        <li>${text1} </li>
         /<ul>
         `
     );
 
 }
-creatUl3('friend', 'friend','friend');
+creatUl3('friend');
 
 //- - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+function iku  (text3, chislo){
+    document.write(`<ul>`);
+    for ( let i = 0; i < chislo; i++) {
+        document.write(`<li>${text3}</li>`)
+    }
+    document.write(`</ul>`);
+}
 
+iku('dnipro', 5)
 //- - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+function srt (frg){
+    document.write(`<ul>`)
+    for (const frgElement of frg) {
+        document.write(`<li>${frg}</li>`)
+    }
+    document.write(`</ul>`)
+}
+srt([5,342,'sdt','sfgsdf','gfss', true, false])
 //+ - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 function more(id, name, age){
     document.write(
